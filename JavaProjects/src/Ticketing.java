@@ -1,6 +1,5 @@
 public class Ticketing {
-	    private int total = 8;
-
+private int total = 8;
 	    public synchronized void bookTicket(String threadName, int numTickets) {
 	        if (total >= numTickets) {
 	            System.out.println(threadName + " booked " + numTickets + " tickets");
@@ -9,7 +8,7 @@ public class Ticketing {
 	            System.out.println(threadName + " failed" + total);
 	        }
 	    }
-	    public static void main(String[] args) {
+public static void main(String[] args) {
 	        Ticketing bookingSystem = new Ticketing();
 	        Runnable bookingTask = () -> {
 	            String threadName = Thread.currentThread().getName();

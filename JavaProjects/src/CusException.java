@@ -4,6 +4,7 @@ class CusException extends Exception {
 	    }
 	    public static void main(String[] args) {
 	        try {
+	        	
 	            int result = 8 / 0;
 	        } catch (RuntimeException e) {
 	         
